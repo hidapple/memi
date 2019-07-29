@@ -65,7 +65,7 @@ func (s *SlackBot) handleMessage(ev *slack.MessageEvent) error {
 
 		var url, title string
 		url = msg[2]
-		if len(msg) > 4 {
+		if len(msg) > 3 {
 			title = strings.Join(msg[3:], " ")
 		} else {
 			title = msg[2]
