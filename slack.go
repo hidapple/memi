@@ -87,7 +87,13 @@ func (s *SlackBot) handleMessage(ev *slack.MessageEvent) error {
 	return nil
 }
 
-// TODO: Implement help message
 func (s *SlackBot) printHelp() string {
-	return `Help message...`
+	return fmt.Sprintf(`
+%s
+- ping: Test the reachability of the bot.
+        usage) $BOT ping
+
+- link: Append markdown link to the Kibela note.
+        usage) $BOT link $URL [$TITLE]
+%s`, "```", "```")
 }
