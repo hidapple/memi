@@ -71,7 +71,7 @@ func (s *SlackBot) handleMessage(ev *slack.MessageEvent) error {
 			title = msg[2]
 		}
 		k := kibela.New(os.Getenv("KIBELA_TOKEN"), os.Getenv("KIBELA_TEAM"))
-		note, err := k.AddLink(os.Getenv("KIBELA_NOTE_ID"), url, title)
+		note, err := k.AddLink(os.Getenv("KIBELA_LINK_NOTE"), url, title)
 		if err != nil {
 			return err
 		}
