@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hidapple/french-bread/kibela"
+	"github.com/hidapple/memi/kibela"
 	"github.com/nlopes/slack"
 )
 
