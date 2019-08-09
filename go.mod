@@ -1,4 +1,4 @@
-module github.com/hidapple/french-bread
+module github.com/hidapple/memi
 
 require (
 	github.com/gorilla/websocket v1.4.0 // indirect
