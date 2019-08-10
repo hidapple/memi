@@ -12,7 +12,8 @@ Set following environment variables.
 
 Run `memi`
 ```shell
-./memi
+docker build -t ${TAG}.
+docker run -e SLACK_TOKEN=${SLACK_TOKEN} -e KIBELA_TOKEN=${KIBELA_TOKEN} -e KIBELA_TEAM=${KIBELA_TEAM} -e KIBELA_LINK_NOTE=${KIBELA_LINK_NOTE} ${TAG}
 ```
 
 ## Commands
